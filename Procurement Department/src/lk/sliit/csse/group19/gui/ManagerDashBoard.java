@@ -46,9 +46,14 @@ public class ManagerDashBoard extends javax.swing.JFrame {
         SupplierBankNoLabel = new javax.swing.JLabel();
         SupplierEmailLabel = new javax.swing.JLabel();
         SupplierPhoneLabel = new javax.swing.JLabel();
-        AddNewSupplierButton = new javax.swing.JButton();
-        SupplierUpdateButton = new javax.swing.JButton();
         SupplierPhoneNoTextField = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator3 = new javax.swing.JSeparator();
+        jSeparator4 = new javax.swing.JSeparator();
+        jSeparator5 = new javax.swing.JSeparator();
+        SupplierUpdateButton = new javax.swing.JButton();
+        AddNewSupplierButton = new javax.swing.JButton();
         SitePanel = new javax.swing.JPanel();
         CurrentSitePanel = new javax.swing.JPanel();
         SelectSiteLabel = new javax.swing.JLabel();
@@ -84,6 +89,9 @@ public class ManagerDashBoard extends javax.swing.JFrame {
         RestrictedCheckBox = new javax.swing.JCheckBox();
         SubHeaderLabelItem = new javax.swing.JLabel();
         AddItemButton = new javax.swing.JButton();
+        jSeparator6 = new javax.swing.JSeparator();
+        jSeparator7 = new javax.swing.JSeparator();
+        jSeparator8 = new javax.swing.JSeparator();
         SearchItemTextfieldItem = new javax.swing.JTextField();
         SearchItemButtonItem = new javax.swing.JButton();
         EmployeePanel = new javax.swing.JPanel();
@@ -108,14 +116,21 @@ public class ManagerDashBoard extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        MainPanel.setBackground(new java.awt.Color(255, 255, 255));
+        MainPanel.setBackground(new java.awt.Color(47, 47, 66));
         MainPanel.setMinimumSize(new java.awt.Dimension(1280, 720));
         MainPanel.setPreferredSize(new java.awt.Dimension(1280, 720));
         MainPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        SupplierPanel.setBackground(new java.awt.Color(69, 69, 96));
+
+        CurrentSupplierPanel.setBackground(new java.awt.Color(69, 69, 96));
+
         SelectSupplierLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        SelectSupplierLabel.setForeground(new java.awt.Color(132, 132, 183));
         SelectSupplierLabel.setText("Select Supplier");
 
+        SupplierList.setBackground(new java.awt.Color(93, 93, 129));
+        SupplierList.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(94, 237, 181)));
         SupplierList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -123,104 +138,133 @@ public class ManagerDashBoard extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(SupplierList);
 
-        SupplierAddUpdatePanel.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        SupplierAddUpdatePanel.setBackground(new java.awt.Color(69, 69, 96));
+        SupplierAddUpdatePanel.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(94, 237, 181)), "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(132, 132, 183))); // NOI18N
 
         AddUpdateLabel1.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
+        AddUpdateLabel1.setForeground(new java.awt.Color(132, 132, 183));
         AddUpdateLabel1.setText("Add / Update Supplier Details");
 
+        SupplierNameTextField1.setBackground(new java.awt.Color(69, 69, 96));
         SupplierNameTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SupplierNameTextField1.setBorder(null);
 
+        SupplierEmailTextField.setBackground(new java.awt.Color(69, 69, 96));
         SupplierEmailTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SupplierEmailTextField.setBorder(null);
 
+        SupplierBankNoTextField.setBackground(new java.awt.Color(69, 69, 96));
         SupplierBankNoTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SupplierBankNoTextField.setBorder(null);
 
+        SupplierAddressTextField.setBackground(new java.awt.Color(69, 69, 96));
         SupplierAddressTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SupplierAddressTextField.setBorder(null);
 
+        SupplierNameLabel.setBackground(new java.awt.Color(204, 204, 204));
         SupplierNameLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SupplierNameLabel.setForeground(new java.awt.Color(204, 204, 204));
         SupplierNameLabel.setText("Site Name");
 
+        SupplierAddressLabel.setBackground(new java.awt.Color(204, 204, 204));
         SupplierAddressLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SupplierAddressLabel.setForeground(new java.awt.Color(204, 204, 204));
         SupplierAddressLabel.setText("Address");
 
+        SupplierBankNoLabel.setBackground(new java.awt.Color(204, 204, 204));
         SupplierBankNoLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SupplierBankNoLabel.setForeground(new java.awt.Color(204, 204, 204));
         SupplierBankNoLabel.setText("Bank Account No");
 
+        SupplierEmailLabel.setBackground(new java.awt.Color(204, 204, 204));
         SupplierEmailLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SupplierEmailLabel.setForeground(new java.awt.Color(204, 204, 204));
         SupplierEmailLabel.setText("Email");
 
+        SupplierPhoneLabel.setBackground(new java.awt.Color(204, 204, 204));
         SupplierPhoneLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SupplierPhoneLabel.setForeground(new java.awt.Color(204, 204, 204));
         SupplierPhoneLabel.setText("Phone");
 
-        AddNewSupplierButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        AddNewSupplierButton.setText("Add new site");
-
-        SupplierUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        SupplierUpdateButton.setText("Update");
-
+        SupplierPhoneNoTextField.setBackground(new java.awt.Color(69, 69, 96));
         SupplierPhoneNoTextField.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        SupplierPhoneNoTextField.setBorder(null);
 
         javax.swing.GroupLayout SupplierAddUpdatePanelLayout = new javax.swing.GroupLayout(SupplierAddUpdatePanel);
         SupplierAddUpdatePanel.setLayout(SupplierAddUpdatePanelLayout);
         SupplierAddUpdatePanelLayout.setHorizontalGroup(
             SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SupplierAddUpdatePanelLayout.createSequentialGroup()
+                .addGap(92, 92, 92)
                 .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SupplierAddUpdatePanelLayout.createSequentialGroup()
-                        .addContainerGap(333, Short.MAX_VALUE)
-                        .addComponent(SupplierUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AddNewSupplierButton, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(SupplierAddUpdatePanelLayout.createSequentialGroup()
-                        .addGap(92, 92, 92)
-                        .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(SupplierNameLabel)
-                            .addComponent(SupplierAddressLabel)
-                            .addComponent(SupplierBankNoLabel)
-                            .addComponent(SupplierEmailLabel)
-                            .addComponent(SupplierPhoneLabel))
-                        .addGap(60, 60, 60)
-                        .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(SupplierEmailTextField)
-                            .addComponent(SupplierNameTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(SupplierAddressTextField)
-                            .addComponent(SupplierBankNoTextField)
-                            .addComponent(SupplierPhoneNoTextField))))
-                .addGap(99, 99, 99))
+                    .addComponent(SupplierNameLabel)
+                    .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                        .addComponent(SupplierNameTextField1, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                            .addComponent(SupplierAddressTextField, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addComponent(SupplierAddressLabel)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SupplierPhoneLabel)
+                            .addComponent(SupplierPhoneNoTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(SupplierEmailLabel)
+                    .addComponent(SupplierEmailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SupplierBankNoTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SupplierBankNoLabel)
+                    .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(52, 52, 52))
             .addGroup(SupplierAddUpdatePanelLayout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addGap(33, 33, 33)
                 .addComponent(AddUpdateLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         SupplierAddUpdatePanelLayout.setVerticalGroup(
             SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SupplierAddUpdatePanelLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addContainerGap()
                 .addComponent(AddUpdateLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SupplierNameTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SupplierNameLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SupplierAddressTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SupplierAddressLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SupplierBankNoTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SupplierBankNoLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SupplierEmailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SupplierEmailLabel))
-                .addGap(18, 18, 18)
-                .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SupplierPhoneNoTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SupplierPhoneLabel))
-                .addGap(37, 37, 37)
-                .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SupplierUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AddNewSupplierButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(32, 32, 32)
+                .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(SupplierAddUpdatePanelLayout.createSequentialGroup()
+                        .addGroup(SupplierAddUpdatePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(SupplierAddUpdatePanelLayout.createSequentialGroup()
+                                .addComponent(SupplierNameLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(SupplierNameTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(2, 2, 2)
+                                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(SupplierAddUpdatePanelLayout.createSequentialGroup()
+                                .addComponent(SupplierEmailLabel)
+                                .addGap(3, 3, 3)
+                                .addComponent(SupplierEmailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(1, 1, 1)
+                                .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(41, 41, 41)
+                        .addComponent(SupplierAddressLabel)
+                        .addGap(3, 3, 3)
+                        .addComponent(SupplierAddressTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addComponent(SupplierPhoneLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SupplierPhoneNoTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(SupplierAddUpdatePanelLayout.createSequentialGroup()
+                        .addComponent(SupplierBankNoLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SupplierBankNoTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(238, 238, 238))))
         );
 
         javax.swing.GroupLayout CurrentSupplierPanelLayout = new javax.swing.GroupLayout(CurrentSupplierPanel);
@@ -249,11 +293,30 @@ public class ManagerDashBoard extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
+        SupplierUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        SupplierUpdateButton.setForeground(new java.awt.Color(94, 237, 181));
+        SupplierUpdateButton.setText("Update");
+        SupplierUpdateButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(94, 237, 181), 1, true));
+        SupplierUpdateButton.setContentAreaFilled(false);
+        SupplierUpdateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        AddNewSupplierButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        AddNewSupplierButton.setForeground(new java.awt.Color(94, 237, 181));
+        AddNewSupplierButton.setText("Add new site");
+        AddNewSupplierButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(94, 237, 181), 1, true));
+        AddNewSupplierButton.setContentAreaFilled(false);
+        AddNewSupplierButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
         javax.swing.GroupLayout SupplierPanelLayout = new javax.swing.GroupLayout(SupplierPanel);
         SupplierPanel.setLayout(SupplierPanelLayout);
         SupplierPanelLayout.setHorizontalGroup(
             SupplierPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1030, Short.MAX_VALUE)
+            .addGroup(SupplierPanelLayout.createSequentialGroup()
+                .addContainerGap(682, Short.MAX_VALUE)
+                .addComponent(SupplierUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(AddNewSupplierButton, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50))
             .addGroup(SupplierPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(SupplierPanelLayout.createSequentialGroup()
                     .addContainerGap()
@@ -262,7 +325,12 @@ public class ManagerDashBoard extends javax.swing.JFrame {
         );
         SupplierPanelLayout.setVerticalGroup(
             SupplierPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 590, Short.MAX_VALUE)
+            .addGroup(SupplierPanelLayout.createSequentialGroup()
+                .addContainerGap(472, Short.MAX_VALUE)
+                .addGroup(SupplierPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SupplierUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AddNewSupplierButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(78, 78, 78))
             .addGroup(SupplierPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(SupplierPanelLayout.createSequentialGroup()
                     .addGap(14, 14, 14)
@@ -432,6 +500,8 @@ public class ManagerDashBoard extends javax.swing.JFrame {
 
         MainPanel.add(SitePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, 1030, 590));
 
+        ItemPanel.setBackground(new java.awt.Color(47, 47, 66));
+
         ItemResultTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -445,40 +515,60 @@ public class ManagerDashBoard extends javax.swing.JFrame {
         ));
         ItemsScrollPane.setViewportView(ItemResultTable);
 
-        AddNewItemPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        AddNewItemPanel.setBackground(new java.awt.Color(69, 69, 96));
+        AddNewItemPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(132, 132, 183)));
         AddNewItemPanel.setToolTipText("");
 
         RestrictedLabelItem.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        RestrictedLabelItem.setForeground(new java.awt.Color(204, 204, 204));
         RestrictedLabelItem.setText("Restricted");
 
         InformationLabelItem.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        InformationLabelItem.setForeground(new java.awt.Color(204, 204, 204));
         InformationLabelItem.setText("Information");
 
         PriceLabelItem.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        PriceLabelItem.setForeground(new java.awt.Color(204, 204, 204));
         PriceLabelItem.setText("Price");
 
         CategoryLabelItem.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        CategoryLabelItem.setForeground(new java.awt.Color(204, 204, 204));
         CategoryLabelItem.setText("Category");
 
         ItemNameLabelItem.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        ItemNameLabelItem.setForeground(new java.awt.Color(204, 204, 204));
         ItemNameLabelItem.setText("Item Name");
 
+        ItemNameTextField.setBackground(new java.awt.Color(69, 69, 96));
         ItemNameTextField.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        ItemNameTextField.setBorder(null);
 
+        CategoryComboBox.setBackground(new java.awt.Color(69, 69, 96));
         CategoryComboBox.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         CategoryComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        CategoryComboBox.setBorder(null);
 
+        PriceTextField.setBackground(new java.awt.Color(69, 69, 96));
         PriceTextField.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        PriceTextField.setBorder(null);
 
+        InformationTextField.setBackground(new java.awt.Color(69, 69, 96));
         InformationTextField.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        InformationTextField.setBorder(null);
 
         RestrictedCheckBox.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
 
         SubHeaderLabelItem.setFont(new java.awt.Font("Segoe UI Symbol", 1, 18)); // NOI18N
+        SubHeaderLabelItem.setForeground(new java.awt.Color(204, 204, 204));
         SubHeaderLabelItem.setText("Add New Item");
 
+        AddItemButton.setBackground(new java.awt.Color(94, 237, 181));
         AddItemButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        AddItemButton.setForeground(new java.awt.Color(94, 237, 181));
         AddItemButton.setText("Add");
+        AddItemButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(94, 237, 181), 1, true));
+        AddItemButton.setContentAreaFilled(false);
+        AddItemButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout AddNewItemPanelLayout = new javax.swing.GroupLayout(AddNewItemPanel);
         AddNewItemPanel.setLayout(AddNewItemPanelLayout);
@@ -488,67 +578,79 @@ public class ManagerDashBoard extends javax.swing.JFrame {
                 .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(AddNewItemPanelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(SubHeaderLabelItem, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(SubHeaderLabelItem, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(AddNewItemPanelLayout.createSequentialGroup()
                         .addGap(86, 86, 86)
-                        .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(ItemNameLabelItem)
                             .addComponent(CategoryLabelItem)
-                            .addComponent(RestrictedLabelItem))
-                        .addGap(40, 40, 40)
+                            .addComponent(ItemNameTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                            .addComponent(CategoryComboBox, 0, 250, Short.MAX_VALUE)
+                            .addComponent(jSeparator6))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(AddNewItemPanelLayout.createSequentialGroup()
-                                .addComponent(RestrictedCheckBox)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(AddItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(AddNewItemPanelLayout.createSequentialGroup()
                                 .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(CategoryComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(ItemNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(92, 92, 92)
-                                .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(PriceLabelItem)
-                                    .addComponent(InformationLabelItem))
-                                .addGap(35, 35, 35)
-                                .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(PriceTextField)
-                                    .addComponent(InformationTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jSeparator8)
+                                    .addComponent(InformationTextField)
+                                    .addComponent(InformationLabelItem)
+                                    .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(171, 171, 171))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddNewItemPanelLayout.createSequentialGroup()
+                                .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(AddNewItemPanelLayout.createSequentialGroup()
+                                        .addComponent(PriceTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(RestrictedCheckBox))
+                                    .addGroup(AddNewItemPanelLayout.createSequentialGroup()
+                                        .addComponent(PriceLabelItem)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(RestrictedLabelItem)))
+                                .addGap(45, 45, 45)))))
+                .addComponent(AddItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
         );
         AddNewItemPanelLayout.setVerticalGroup(
             AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AddNewItemPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(SubHeaderLabelItem, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(AddNewItemPanelLayout.createSequentialGroup()
-                        .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(SubHeaderLabelItem, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24)
+                        .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(ItemNameLabelItem)
+                            .addComponent(PriceLabelItem)
+                            .addComponent(RestrictedLabelItem))
+                        .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(ItemNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ItemNameLabelItem))
-                        .addGap(18, 18, 18)
-                        .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(CategoryComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CategoryLabelItem)))
-                    .addGroup(AddNewItemPanelLayout.createSequentialGroup()
-                        .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(PriceTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(PriceLabelItem))
-                        .addGap(18, 18, 18)
-                        .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(InformationTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(InformationLabelItem))))
-                .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AddNewItemPanelLayout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(AddItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(AddNewItemPanelLayout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(RestrictedLabelItem))
-                    .addGroup(AddNewItemPanelLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(RestrictedCheckBox)))
-                .addContainerGap(25, Short.MAX_VALUE))
+                            .addComponent(PriceTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(RestrictedCheckBox))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddNewItemPanelLayout.createSequentialGroup()
+                        .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(AddNewItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(AddNewItemPanelLayout.createSequentialGroup()
+                                .addGap(32, 32, 32)
+                                .addComponent(CategoryLabelItem)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(CategoryComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(14, 14, 14))
+                            .addGroup(AddNewItemPanelLayout.createSequentialGroup()
+                                .addGap(74, 74, 74)
+                                .addComponent(AddItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(11, 11, 11))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddNewItemPanelLayout.createSequentialGroup()
+                        .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(InformationLabelItem)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(InformationTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29))))
         );
 
         SearchItemTextfieldItem.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -666,7 +768,7 @@ public class ManagerDashBoard extends javax.swing.JFrame {
 
         MainPanel.add(PaymentPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(229, 110, 1030, 590));
 
-        HeaderPanel.setBackground(new java.awt.Color(255, 255, 255));
+        HeaderPanel.setBackground(new java.awt.Color(69, 69, 96));
 
         HeaderLabel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
@@ -677,7 +779,7 @@ public class ManagerDashBoard extends javax.swing.JFrame {
             .addGroup(HeaderPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(HeaderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 602, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(258, Short.MAX_VALUE))
+                .addContainerGap(618, Short.MAX_VALUE))
         );
         HeaderPanelLayout.setVerticalGroup(
             HeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -687,7 +789,7 @@ public class ManagerDashBoard extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        MainPanel.add(HeaderPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 11, 870, 90));
+        MainPanel.add(HeaderPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 11, 1230, 90));
 
         PaymentButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         PaymentButton.setText("Payments");
@@ -946,6 +1048,14 @@ public class ManagerDashBoard extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
+    private javax.swing.JSeparator jSeparator8;
     private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
